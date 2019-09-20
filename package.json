@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/tweekslbc/acme_posts_comments/issues"
   },
-  "homepage": "https://github.com/tweekslbc/acme_posts_comments#readme"
+  "homepage": "https://github.com/tweekslbc/acme_posts_comments#readme",
+  "dependencies": {
+    "pg": "^7.12.1",
+    "sequelize": "^5.19.0"
+  }
 }

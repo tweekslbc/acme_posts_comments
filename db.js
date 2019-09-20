@@ -51,7 +51,7 @@ const SQL=
     
 const syncAndSeed = async()=> {
   await client.query(SQL);
-  console.log('SUCCESS!!!!!');
+  console.log('ITS ALIVE!!!!!');
 };
 
 const findAllPosts = async()=> {
