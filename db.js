@@ -39,8 +39,17 @@ const SQL=
     INSERT INTO posts(id, topic)
     VALUES ('${ids.react_category}', 'React');
     
+    INSERT INTO tags(id, text, post_id)
+    VALUES('${ids.dev_1}', 'It was boring...', '${ids.express_category}');
+    
+    INSERT INTO tags(id, text, post_id) 
+    VALUES('${ids.dev_2}','It was good!','${ids.react_category}');
+
+    INSERT INTO tags(id, text, post_id) 
+    VALUES('${ids.dev_3}','I dont understand it...','${ids.react_category}');
+`;
+    
     
 
 
 
-`
