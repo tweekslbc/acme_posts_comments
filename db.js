@@ -29,6 +29,17 @@ const SQL=
       text VARCHAR(255) UNIQUE NOT NULL,
       post_id UUID REFERENCES posts(id)
  );
+ 
+    INSERT INTO posts(id, topic)
+    VALUES('${ids.node_category}','Node');
+    
+    INSERT INTO posts(id, topic)
+    VALUES('${ids.express_category}','Express');
+    
+    INSERT INTO posts(id, topic)
+    VALUES ('${ids.react_category}', 'React');
+    
+    
 
 
 
