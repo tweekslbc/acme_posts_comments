@@ -54,6 +54,21 @@ const syncAndSeed = async()=> {
   console.log('SUCCESS!!!!!');
 };
 
+const findAllPosts = async()=> {
+  const response = await client.query('SELECT * FROM posts');
+  return response.rows;
+};
+const findAllTags = async()=> {
+  const response = await client.query('SELECT * FROM tags');
+  return response.rows;
+};
+
+module.exports = {
+  syncAndSeed,
+  findAllPosts,
+  findAllTags
+};
+
     
 
 
