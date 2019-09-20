@@ -49,6 +49,11 @@ const SQL=
     VALUES('${ids.dev_3}','I dont understand it...','${ids.react_category}');
 `;
     
+const syncAndSeed = async()=> {
+  await client.query(SQL);
+  console.log('SUCCESS!!!!!');
+};
+
     
 
 
