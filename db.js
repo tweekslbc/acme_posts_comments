@@ -16,15 +16,19 @@ const generateIds = (...names)=> {
 const ids = generateIds('node_category','express_category', 'react_category','dev_1', 'dev_2', 'dev_3');
 
 const SQL=
-`DROP TABLE IF EXISTS tags;
+    `DROP TABLE IF EXISTS tags;
  DROP TABLE IF EXISTS posts;
- CREATE TABLE posts
- (
+ CREATE TABLE posts(
     id UUID PRIMARY KEY,
-    topic VARCHAR (255) 
+    topic VARCHAR(255) 
     UNIQUE NOT NULL
  );
-
+    CREATE TABLE tags
+ (
+      id UUID PRIMARY KEY,
+      text VARCHAR(255) UNIQUE NOT NULL,
+      post_id UUID REFERENCES posts(id)
+ );
 
 
 
